@@ -15,13 +15,13 @@ import org.springframework.batch.item.ItemWriter;
 import org.springframework.batch.item.data.RepositoryItemReader;
 import org.springframework.batch.item.data.RepositoryItemWriter;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.data.domain.Sort;
+import org.springframework.stereotype.Component;
 import org.springframework.transaction.PlatformTransactionManager;
 
 import java.util.HashMap;
 
-@Configuration
+@Component
 public class StudentDataTransferJob {
 
     private final JobBuilder jobBuilder;
